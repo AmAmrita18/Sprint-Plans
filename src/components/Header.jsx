@@ -50,7 +50,7 @@ const Header = () => {
   };
   return (
     <div className="sticky top-0 z-50 w-full bg-[#f3f4f6] py-1 px-1">
-      <div className=" mx-auto py-4 pt-4 pb-2 px-8 flex flex-row justify-between bg-white">
+      <div className=" mx-auto py-4 pt-4 pb-2 px-6 flex flex-row justify-between bg-white">
         <div className="flex flex-row gap-3 justify-center items-center">
           <div className="w-[45px] h-[45px] bg-[#a3e635] rounded-md mb-2">
             <img src="" alt="" />
@@ -66,11 +66,11 @@ const Header = () => {
                   to={`/${nav.title.toLowerCase()}`}
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#a3e635] hover:border-b-2 hover:border-[#a3e635]"
-                      : "text-[#9ca3af] hover:text-[#a3e635] hover:border-b-[3px] hover:border-[#a3e635]"
+                      ? "text-[#a3e635] hover:border-b-[3px] hover:border-[#a3e635]"
+                      : "text-[#9ca3af] hover:text-[#a3e635] "
                   }
                 >
-                  <h3 className="text-[15px] mb-2 cursor-pointer font-[700] ">
+                  <h3 className="text-[15px] mb-2 cursor-pointer font-[800] ">
                     {nav.title}
                   </h3>
                 </NavLink>
@@ -79,7 +79,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex flex-row gap-3 justify-center items-center">
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-row justify-center items-center border-r-[3px] border-[#e5e7eb]">
             <div className="z-30">
               <img src={img1} alt="" className="w-9 h-9 rounded-full " />
             </div>
@@ -90,15 +90,15 @@ const Header = () => {
               <img src={img3} alt="" className="w-9 h-9 rounded-full " />
             </div>
             <div className="-ml-2">
-              <img src={img4} alt="" className="w-9 h-9 rounded-full " />
+              <img src={img4} alt="" className="w-9 h-9 rounded-full mr-3 " />
             </div>
           </div>
           <div>
             <form onSubmit={handleSearch} className="relative">
-              <div className="flex items-center border-2 w-[180px] border-[#9ca3af] hover:border-[#4b5563] rounded-full overflow-hidden">
+              <div className="flex items-center border-2 w-[160px] border-[#9ca3af] hover:border-[#4b5563] rounded-full overflow-hidden">
                 <button
                   type="submit"
-                  className="text-[#9ca3af] p-2 hover:text-[#4b5563] transition duration-300"
+                  className="text-[#9ca3af] px-2 py-1 hover:text-[#4b5563] transition duration-300"
                 >
                   <FaSearch className="h-5 w-5 ml-1" />
                 </button>
@@ -112,7 +112,7 @@ const Header = () => {
               </div>
             </form>
           </div>
-          <button className="bg-[#f87171] p-1 rounded-full">
+          <button className="bg-[#f87171] shadow-lg p-1 rounded-full">
             <HiPlus className="text-white text-[25px]" />
           </button>
         </div>
