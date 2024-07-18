@@ -267,7 +267,7 @@ const TaskBoard = ({ title }) => {
           className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
           id="my-modal"
         >
-          <div className="relative top-32 mx-auto p-5 border w-[40%] shadow-xl rounded-md bg-white bg-opacity-90">
+          <div className="relative top-32 mx-auto p-5 border md:w-[40%] w-[90%] shadow-xl rounded-md bg-white bg-opacity-90">
             <div className="  text-center">
               <h3 className="text-[23px] font-[800] text-[#4b5563] mb-3">
                 Add Task : {currentCategory}
